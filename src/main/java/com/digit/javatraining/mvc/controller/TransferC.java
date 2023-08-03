@@ -38,10 +38,10 @@ public class TransferC extends HttpServlet {
 		bnk.setAmount(Amount);
 		boolean b = bnk.TransferStatus();
 		if(b) {
-			resp.sendRedirect("/Banking_Application/transfersuccess.jsp");
+			resp.sendRedirect("/MVCBankApp/transfersuccess.jsp");
 		}
 		else {
-			resp.sendRedirect("/Banking_Application/fail.jsp");
+			resp.sendRedirect("/MVCBankApp/fail.jsp");
 		}
 		
 	}
