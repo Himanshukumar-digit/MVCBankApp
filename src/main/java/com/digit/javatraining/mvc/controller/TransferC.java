@@ -36,7 +36,7 @@ public class TransferC extends HttpServlet {
 		bnk.setReciever_accno(Reciever_accno);
 		bnk.setReciever_ifsc(Reciever_Ifsc);
 		bnk.setAmount(Amount);
-		boolean b = bnk.checkBalance();
+		boolean b = bnk.TransferStatus();
 		if(b) {
 			resp.sendRedirect("/Banking_Application/transfersuccess.jsp");
 		}

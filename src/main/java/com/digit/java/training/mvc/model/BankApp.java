@@ -655,6 +655,7 @@ public class BankApp {
 
 								int x3 = pstmt.executeUpdate();
 								if (x3 > 0) {
+									return true;
 									//resp.sendRedirect("/Banking_Application/transfersuccess.jsp");
 								} else {
 									//resp.sendRedirect("/Banking_Application/fail.jsp");
